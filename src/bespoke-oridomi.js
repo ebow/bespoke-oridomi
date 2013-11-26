@@ -38,18 +38,11 @@
 		}, oridomi_options);
 
     deck.on('activate', function(event) {
-      console.log('Slide #' + event.index + ' was activated!', event.slide);
       var current_slide_folder = oridomi_slides[event.index];
       current_slide_folder.reset();
     });
 
-    deck.on('deactivate', function(event) {
-      console.log('Slide #' + event.index + ' was deactivated!', event.slide);
-    });
-
     deck.on('next', function(event) {
-      console.log('The next slide is #' + (event.index + 1), deck.slides[event.index + 1]);
-      
       if(event.index < deck.slides.length-1) {
         var current_slide_folder = oridomi_slides[event.index];
         current_slide_folder.foldUp(4, function(event) {
@@ -58,18 +51,11 @@
     });
 
     deck.on('prev', function(event) {
-      console.log('The previous slide is #' + (event.index - 1), deck.slides[event.index - 1]);
-      
       if(event.index != 0) {
         var current_slide_folder = oridomi_slides[event.index];
         current_slide_folder.foldUp(2, function(event) {
         });
       }
-    });
-
-    deck.on('slide', function(e) {
-      console.log('The requested slide is #' + event.index, event.slide);
-      // return false to cancel user interaction
     });
   };
 }(bespoke));
