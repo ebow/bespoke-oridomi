@@ -30,7 +30,6 @@
       oridomi = new OriDomi(oridomi_container, oridomi_options);
       oridomi.setSpeed(0);
       if(slide_count > 0) {
-        oridomi.el.style.opacity = 0;
         oridomi.accordion(100);
         oridomi.setSpeed(oridomi_options.speed);
       }
@@ -41,7 +40,6 @@
     deck.on('activate', function(event) {
       console.log('Slide #' + event.index + ' was activated!', event.slide);
       var current_slide_folder = oridomi_slides[event.index];
-      current_slide_folder.el.style.opacity = 1;
       current_slide_folder.reset();
     });
 
@@ -55,7 +53,6 @@
       if(event.index < deck.slides.length-1) {
         var current_slide_folder = oridomi_slides[event.index];
         current_slide_folder.foldUp(4, function(event) {
-          event.target.style.opacity = 0;
         });
       }
     });
@@ -66,7 +63,6 @@
       if(event.index != 0) {
         var current_slide_folder = oridomi_slides[event.index];
         current_slide_folder.foldUp(2, function(event) {
-          event.target.style.opacity = 1;
         });
       }
     });
