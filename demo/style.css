@@ -1,0 +1,82 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #303030;
+}
+
+h1 {
+  height: 25px;
+  width: 640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -322px;
+  margin-top: -290px;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+section {
+  display: none;
+}
+
+.bespoke-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bespoke-slide {
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  margin-top: -240px;
+  left: 50%;
+  margin-left: -320px;
+}
+
+section.bespoke-slide {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  display: block;
+}
+
+.oridomi_transition_complete {
+  
+}
+
+.bespoke-inactive {
+  opacity: 0;
+}
+
+.bespoke-active {
+  opacity: 1;
+}
+
+.oridomi_container {
+  width: 640px;
+  height: 500px;
+  background: #EEE;
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  
+/*  opacity: 1;*/
+}

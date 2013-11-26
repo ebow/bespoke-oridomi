@@ -1,0 +1,8 @@
+{
+  "name": "bespoke-oridomi",
+  "version": "0.0.0",
+  "dependencies": {
+    "bespoke.js": ">=0.3.0",
+    "oridomi": ">=1.0.1"
+  }
+}
