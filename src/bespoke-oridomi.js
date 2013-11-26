@@ -30,7 +30,7 @@
       oridomi = new OriDomi(oridomi_container, oridomi_options);
       oridomi.setSpeed(0);
       if(slide_count > 0) {
-        oridomi.accordion(100);
+        oridomi.foldUp(2);
         oridomi.setSpeed(oridomi_options.speed);
       }
       slide_count++;
