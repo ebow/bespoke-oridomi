@@ -46,7 +46,8 @@ require('bespoke-oridomi');
 
 ## Credits
 
-This plugin was built with [generator-bespokeplugin](https://github.com/markdalgleish/generator-bespokeplugin).
+This plugin was built with [generator-bespokeplugin](https://github.com/markdalgleish/generator-bespokeplugin) and
+[oridomi](https://github.com/dmotz/oriDomi)
 
 ## License
 
