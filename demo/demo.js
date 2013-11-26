@@ -1,3 +1,8 @@
 bespoke.horizontal.from('article', {
-  oridomi: true
+  oridomi: {
+    oridomi_options: {
+      speed: 1000
+    },
+    transition: "accordion"
+  }
 });
