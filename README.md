@@ -23,6 +23,38 @@ bespoke.horizontal.from('article', {
 });
 ```
 
+## Options
+You can send additional options through to bespoke-oridomi to tweak the outcome.
+
+**transition:** "foldUp" or "accordion"
+
+**oridomi_options:** options sent directly to OriDomi.js see [OriDomi.com](http://oridomi.com) for examples, documentation and notes.
+
+### Advanced Example
+```js
+bespoke.horizontal.from('article', {
+  oridomi: {
+    oridomi_options: {
+      speed: 1000
+    },
+    transition: "accordion"
+  }
+});
+```
+
+### Note
+OriDomi clones your slide and wraps it inside itself. So avoid putting a background on the slide directly. If you need a background place it on a node inside the slide. See demo for full example.
+
+```html
+<article>
+  <section>
+    <div style="background: gray; width: 100%; height: 100%">
+      <p>Slide 1</p>
+    </div>
+  </section>
+</article>
+```
+
 ## Package managers
 
 ### Bower
